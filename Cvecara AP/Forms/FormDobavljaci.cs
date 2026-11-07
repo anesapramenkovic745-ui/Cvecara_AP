@@ -128,7 +128,7 @@ namespace Cvecara_AP.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Greška pri izmeni:\n" + ex.Message, "Greška",
+                MessageBox.Show("Greška pri izmenNi:\n" + ex.Message, "Greška",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
