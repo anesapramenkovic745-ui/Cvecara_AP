@@ -100,6 +100,12 @@
     <Compile Include="Forms\FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormCvece.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCvece.Designer.cs">
+      <DependentUpon>FormCvece.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormDobavljaci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,14 +124,24 @@
     <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormTipovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTipovi.Designer.cs">
+      <DependentUpon>FormTipovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cvece.cs" />
     <Compile Include="Models\Dobavljac.cs" />
     <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\KorisnikAplikacije.cs" />
+    <Compile Include="Models\TipCveca.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CveceRepository.cs" />
     <Compile Include="Repositories\DobavljacRepository.cs" />
     <Compile Include="Repositories\KorisnikAplikacijeRepository.cs" />
     <Compile Include="Repositories\KorisnikRepository.cs" />
+    <Compile Include="Repositories\TipCvecaRepository.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

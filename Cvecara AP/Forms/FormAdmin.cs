@@ -16,8 +16,8 @@ namespace Cvecara_AP.Forms
 
             btnKupci.Click += (s, e) => new FormKupci().ShowDialog();
             btnDobavljaci.Click += (s, e) => new FormDobavljaci().ShowDialog();
-            btnTipovi.Click += (s, e) => Uskoro("Tipovi cveća");
-            btnCvece.Click += (s, e) => Uskoro("Cveće");
+            btnTipovi.Click += (s, e) => new FormTipovi().ShowDialog();
+            btnCvece.Click += (s, e) => new FormCvece().ShowDialog();
             btnPorudzbine.Click += (s, e) => Uskoro("Porudžbine");
             btnOdjava.Click += btnOdjava_Click;
             this.FormClosed += FormAdmin_FormClosed;
