@@ -17,7 +17,6 @@ namespace Cvecara_AP.Forms
             lblRegistracija.Click += lblRegistracija_Click;
         }
 
-        // Briše unos i vraća fokus na korisničko ime (poziva se posle odjave)
         public void OcistiPolja()
         {
             txtKorisnickoIme.Clear();
@@ -79,9 +78,9 @@ namespace Cvecara_AP.Forms
                 }
                 else
                 {
-                    // Formu za kupca pravimo kasnije
-                    MessageBox.Show("Uspešna prijava!\nUloga: " + korisnik.Uloga, "Prijava",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FormKupac kupacForma = new FormKupac(this);
+                    kupacForma.Show();
+                    this.Hide();
                 }
             }
             catch (Exception ex)

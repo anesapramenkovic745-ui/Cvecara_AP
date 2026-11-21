@@ -1,12 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cvecara_AP.Models
 {
-    internal class Porudzbina
+    public class Porudzbina
     {
+        public int PorudzbinaId { get; set; }
+        public string Kupac { get; set; }
+        public DateTime Datum { get; set; }
+        public decimal UkupnaCena { get; set; }
+
+        public Porudzbina() { }
     }
 }

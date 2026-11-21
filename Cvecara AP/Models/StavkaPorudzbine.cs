@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Cvecara_AP.Models
+﻿namespace Cvecara_AP.Models
 {
-    internal class StavkaPorudzbine
+    public class StavkaPorudzbine
     {
+        public string Naziv { get; set; }
+        public string Boja { get; set; }
+        public int Kolicina { get; set; }
+        public decimal CenaPoJedinici { get; set; }
+        public decimal Iznos { get; set; }
+
+        public StavkaPorudzbine() { }
     }
 }
